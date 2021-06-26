@@ -1,0 +1,17 @@
+{
+  "name": "fcss-core",
+  "version": "1.0.0",
+  "description": ".",
+  "main": "f.sass",
+  "homepage": "https://github.com/iamsergo/fcss-core#readme",
+  "scripts": {
+    "sass-build": "sass --no-source-map sass/f.sass:dev/css/style.css",
+    "sass-watch": "sass --no-source-map --watch sass/f.sass:dev/css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.35.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
