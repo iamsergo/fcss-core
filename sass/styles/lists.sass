@@ -1,0 +1,37 @@
+@import ../constants/base
+@import ../constants/colors
+
+ul, .f.ul,
+ol, .f.ol
+  margin: $rem-1 0
+  padding-left: $rem-1
+
+  li,
+  .f.li
+    line-height: 1.5
+
+  ul, .f.ul,
+  ol, .d.ol
+    margin: 0
+
+dl,
+.f.dl
+  display: inline-block
+  margin: 0
+
+  dt,
+  .f.dt
+    font-weight: bold
+    line-height: 1.5
+    margin: 0
+    padding-top: $rem-1
+
+  dd,
+  .f.dd
+    line-height: 1.5
+    margin-left: $rem-1
+    padding-bottom: $rem-1
+
+    & + dt,
+    & + .f.dt
+      border-top: 1px solid $color-default
