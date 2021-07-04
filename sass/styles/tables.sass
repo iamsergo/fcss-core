@@ -1,0 +1,26 @@
+@import ../constants/base
+@import ../constants/colors
+
+table
+  border-collapse: collapse
+
+  caption
+    padding-bottom: $rem-0-25
+    font-style: italic
+    & + thead
+      border-top: 2px solid black
+
+  thead
+    border-bottom: 2px solid black
+    td,th
+      border: none  
+
+  tbody
+    tr
+      border-bottom: 1px solid $color-default
+      &:hover
+        background-color: $color-light-gray
+
+  th, td
+    padding: $rem-0-25
+    text-align: center
