@@ -1,0 +1,26 @@
+@import ../constants/base
+@import ../constants/colors
+
+button,
+input[type="reset"],
+input[type="button"],
+.f.btn
+  border: none
+  outline: none
+  border-radius: $rem-0-5
+  background-color: $color-primary
+  color: white
+  font-weight: bold
+  font-size: $rem-1
+  padding: $rem-0-5 $rem-0-75
+  display: inline-block
+
+  &:hover
+    cursor: pointer
+    opacity: 0.8
+
+  &:focus
+    box-shadow: 0 -3px 2px $color-link, 0 3px 2px $color-link, -3px 0 2px $color-link, 3px 0 2px $color-link
+    
+  &:active
+    opacity: 0.6    
