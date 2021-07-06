@@ -1,0 +1,44 @@
+@import ../constants/base
+@import ../constants/colors
+
+form
+  max-width: $rem-1 * 25
+
+input:not([type="checkbox"],[type="radio"]),
+textarea,
+select
+  font-family: inherit
+  font-size: 100%
+  display: block
+  box-sizing: border-box
+
+  border-radius: $rem-0-25
+  border: 1px solid $color-default
+  outline: none
+  background: transparent
+  margin: 0
+  padding: $rem-0-5
+  width: 100%      
+  &:focus
+    box-shadow: 0 0 0 3px $color-primary
+    border: 1px solid black
+
+input:-internal-autofill-selected
+  background: transparent !important
+
+label
+  & + input:not([type="checkbox"],[type="radio"]),
+  & + textarea,
+  & + select
+    margin: $rem-0-25
+
+fieldset
+  border: none
+  padding: 0
+  margin: $rem-0-5 0
+
+  legend
+    font-weight: bold
+    font-size: 125%
+    padding: 0
+    margin-bottom: $rem-0-25
