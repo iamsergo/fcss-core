@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../f.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>fcss</title>
+</head>
+<body>
+  <main>
+    <h1>fcss</h1>
+    <p>
+      fcss - стили без классов.<br>
+      Просто подключи css файл и радуйся.
+      <br><a target="_blank" href="https://github.com/iamsergo/fcss-core">github</a>
+    </p>
+
+    <br><h2>Подключение</h2>
+    <pre><code>&lt;link rel="stylesheet" href="#"&gt;</code></pre>
+
+    <p>В атрибут <code>href</code> необходимо вставить:</p>
+    <ul>
+      <li>
+        url файла на
+        <a target="_blank" href="https://raw.githubusercontent.com/iamsergo/fcss-core/master/f.min.css">
+          github
+        </a>
+        (https://raw.githubusercontent.com/iamsergo/fcss-core/master/f.min.css)
+        <pre><code>&lt;link rel="stylesheet" href="https://raw.githubusercontent.com/iamsergo/fcss-core/master/f.min.css"&gt;</code></pre>
+      </li>
+      <li>
+        путь в локальной директории к скачанному файлу
+        <a target="_blank" href="https://raw.githubusercontent.com/iamsergo/fcss-core/master/f.min.css">
+          f.min.css
+        </a>
+        <pre><code>&lt;link rel="stylesheet" href="/path/to/f.min.css"&gt;</code></pre>
+      </li>
+    </ul>
+    
+    <br><h2>Стили</h2>
+    <p>
+      Никаких атрибутов(class, id) указывать не надо - просто используйте теги как обычно и все станет красиво.<br>
+    </p>
+    <p>
+      Но в некоторых случайях, все-таки придется соблюдать определенную структуру тегов.
+    </p>
+
+
+    <h3>Типография</h3><hr>
+
+    <h4>Заголовки</h4>
+    <div class="example">
+      <h1>Cascading Style Sheets</h1>
+      <h2>Cascading Style Sheets</h2>
+      <h3>Cascading Style Sheets</h3>
+      <h4>Cascading Style Sheets</h4>
+      <h5>Cascading Style Sheets</h5>
+      <h6>Cascading Style Sheets</h6>
+    </div>
+
+    <h4>Параграфы</h4>
+    <div class="example">
+      <p>
+        CSS - формальный язык описания внешнего вида документа (веб-страницы),
+        написанного с использованием языка разметки (чаще всего HTML или XHTML).
+      </p>
+      <p>
+        Также может применяться к любым XML-документам, например, к SVG или XUL.
+      </p>
+      <p>
+        CSS используется создателями веб-страниц
+        для задания цветов, шрифтов, стилей,
+        расположения отдельных блоков и
+        других аспектов представления
+        внешнего вида этих веб-страниц.
+        Основной целью разработки CSS являлось
+        отделение описания логической структуры веб-страницы
+        (которое производится с помощью HTML или других языков разметки)
+        от описания внешнего вида этой веб-страницы
+        (которое теперь производится с помощью формального языка CSS).
+        Такое разделение может увеличить доступность документа,
+        предоставить большую гибкость и возможность управления его представлением,
+        а также уменьшить сложность и повторяемость в структурном содержимом.
+      </p>
+    </div>
+    
+
+    <h4>Детали</h4>
+    <div class="example">
+      <details>
+        <summary>CSS1</summary>
+        Рекомендация W3C, принята 17 декабря 1996 года, откорректирована 11 января 1999 года[3].
+      </details>
+      <details>
+        <summary>CSS2</summary>
+        Рекомендация W3C, принята 12 мая 1998 года[4].
+      </details>
+      <details open>
+        <summary>CSS3</summary>
+        CSS3 (англ. Cascading Style Sheets 3 — каскадные таблицы стилей третьего поколения) — активно разрабатываемая спецификация CSS.
+      </details>
+    </div>
+    
+
+    <h4>Цитаты</h4>
+    <div class="example">
+      <blockquote>
+        <b>CSS Framework</b> — это заранее подготовленная CSS-библиотека, созданная для упрощения работы верстальщика, быстроты разработки и исключения максимально возможного числа ошибок вёрстки
+        <cite>Определение</cite>
+      </blockquote>
+    </div>
+    
+
+    <h4>Разделители</h4>
+    <div class="example">
+      Lorem ipsum dolor sit.
+      <hr>
+      Lorem, ipsum dolor.
+      <hr>
+      <hr>
+    </div>
+    
+
+    <h4>Код</h4>
+
+    <h5>Короткий вариант</h5>
+    <div class="example">
+      <p>
+        Чтобы показать сообщение на экране, необходимо вызвать функцию <code>window.alert()</code>.
+      </p>
+    </div>
+    
+
+    <h5>Длинный вариант</h5>
+    <div class="example">
+      <pre><code>
+const f = x => x ** 2
+const g = x => x ** 3
+
+const compose = (x, ...fns) => fns.reduce((arg, f) => f(arg), x)
+
+function main()
+{
+  window.alert(compose(2,f,g))
+}
+      </code></pre>
+    </div>
+    
+
+    <h3>Списки</h3><hr>
+
+    <h4>Неупорядоченный список</h4>
+    <div class="example">
+      <h5>Расширения CSS</h5>
+      <ul>
+        <li>Sass</li>
+        <li>LESS</li>
+        <li>Stylus</li>
+        <li>Языки некоторых расширений
+          <ul>
+            <li>PostCSS</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+
+    <h4>Упорядоченный список</h4>
+    <div class="example">
+      <h5>Числительные</h5>
+      <ol>
+        <li>Первый</li>
+        <li>Второй</li>
+        <li>Десятый
+          <ol>
+            <li>Одиннадцатый</li>
+            <li>Двеннадцатый</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    
+    
+    <h4>Список терминов</h4>
+    <div class="example">
+      <h5>OSI</h5>
+      <dl>
+        <dt>Прикладной уровень</dt>
+        <dd>
+          Прикладной уровень — верхний уровень модели, обеспечивающий
+          взаимодействие пользовательских приложений с сетью
+        </dd>
+        <dt>Уровень представления</dt>
+        <dd>
+          Уровень представления обеспечивает преобразование протоколов и
+          кодирование/декодирование данных
+        </dd>
+      </dl>
+    </div>
+    
+
+
+    <h3>Ссылки</h3><hr>
+    <div class="example">
+      <p>
+        <a href="#">Гиперссылка</a> - то, почему интернет это сеть.
+      </p>
+    </div>
+    
+    
+    
+    <h3>Изображения</h3><hr>
+
+    <h4>Простое изображение</h4>
+    <div class="example">
+      <img src="0.png" alt="oops...">
+    </div>
+    
+
+    <h4>Изображение с подписью</h4>
+    <div class="example">
+      <figure>
+        <img src="1.jpg" alt="oops...">
+        <figcaption>Природа. Горизонтальная картинка.</figcaption>
+      </figure>
+    </div>
+    
+
+    <h3>Таблицы</h3><hr>
+    <div class="example">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td rowspan="2">@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+
+    <h3>Формы</h3><hr>
+
+    <h4>Поле ввода</h4>
+    <div class="example">
+      <form action="#">
+        <label for="login">Login</label>
+        <input id="login" type="text" placeholder="Введите...">
+      </form>
+    </div>
+    
+    
+    <h4>Поле многострочного ввода</h4>
+    <div class="example">
+      <form action="#">
+        <label for="comment">Comment</label>
+        <textarea id="comment"></textarea>
+      </form>
+    </div>
+    
+    
+    <h4>Селект</h4>
+    <div class="example">
+      <form action="#">
+        <label for="fruits">Select fruit</label>
+        <select id="fruits">
+          <option value="banan">banan</option>
+          <option value="orange">orange</option>
+          <option value="apple">apple</option>
+        </select>
+      </form>
+    </div>
+    
+    
+    <h4>Радиокнопка</h4>
+    <div class="example">
+      <form action="#">
+        <label for="m">
+          М
+          <input type="radio" name="gender" id="m">
+        </label>
+        <label for="f">
+          Ж
+          <input type="radio" name="gender" id="f">
+        </label>
+      </form>
+    </div>
+    
+
+    <h4>Флаг</h4>
+    <div class="example">
+      <form action="#">
+        <label>
+          Subscribe
+          <input type="checkbox">
+        </label>
+        <br>
+        <label>
+          Subscribe
+          <input type="checkbox">
+        </label>
+      </form>
+    </div>
+    
+
+    <h4>Кнопка</h4>
+    <div class="example">
+      <form action="#">
+        <button>Сохранить</button>
+        <button>Отмена</button>
+      </form>
+    </div>
+    
+
+    <h4>Группы полей</h4>
+    <div class="example">
+      <form action="#">    
+        <fieldset>
+          <legend>ФИО</legend>
+    
+          <label for="name">Имя</label>
+          <input id="name" type="text" placeholder="Введите...">
+
+          <label for="lastName">Фамилия</label>
+          <input id="lastName" type="text" placeholder="Введите...">          
+        </fieldset>
+        <fieldset>
+          <legend>Пароль</legend>
+    
+          <label for="pass">Имя</label>
+          <input id="pass" type="password" placeholder="Введите...">         
+        </fieldset>
+      </form>
+    </div>
+  </main>
+  <script src="doc.js"></script>
+</body>
+</html>

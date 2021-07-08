@@ -5,7 +5,7 @@
   "main": "f.sass",
   "homepage": "https://github.com/iamsergo/fcss-core#readme",
   "scripts": {
-    "sass-build": "sass --no-source-map sass/f.sass:dev/css/style.css",
+    "sass-build": "sass --no-source-map --style compressed sass/f.sass:f.min.css",
     "sass-watch": "sass --no-source-map --watch sass/f.sass:dev/css/style.css"
   },
   "devDependencies": {
