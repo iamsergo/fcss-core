@@ -1,10 +1,11 @@
 @import ../constants/base
 @import ../constants/colors
 
-form
-  max-width: $rem-1 * 25
-
-input:not([type="checkbox"],[type="radio"]),
+input:not([type="checkbox"],
+[type="radio"],
+[type="reset"],
+[type="submit"],
+[type="button"]),
 textarea,
 select
   font-family: inherit
@@ -22,9 +23,6 @@ select
   &:focus
     box-shadow: 0 0 0 3px $color-primary
     border: 1px solid black
-
-input:-internal-autofill-selected
-  background: transparent !important
 
 label
   & + input:not([type="checkbox"],[type="radio"]),
